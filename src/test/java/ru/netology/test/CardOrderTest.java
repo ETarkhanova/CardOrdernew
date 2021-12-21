@@ -18,7 +18,7 @@ public class CardOrderTest {
         open("http://localhost:9999");
         SelenideElement form = $("form");
         form.$("[data-test-id=name] input").setValue("Иванов-Петров Федор");
-        form.$("[data-test-id=phone] input").setValue("+79992223334");
+        form.$("[data-test-id=phone] input").setValue("+79933492223");
         form.$("[data-test-id=agreement]").click();
         form.$("button").click();
         $("[data-test-id=order-success]").shouldHave(text("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
